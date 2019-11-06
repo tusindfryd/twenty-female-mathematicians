@@ -110,10 +110,18 @@ section.footnotes, section.footnotes li, section.footnotes p {
     }
     .row {
         width: 100%;
+        display: -webkit-box;
+        display: -moz-box;
         display: -ms-flexbox;
+        display: -webkit-flexbox;
+        display: -webkit-flex;
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    }
+    footer {
+        width: 80vw;
+        margin-left: 10vw;
     }
     .header {
         padding-top: 10vh;
