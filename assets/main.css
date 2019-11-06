@@ -84,37 +84,36 @@ section.footnotes, section.footnotes li, section.footnotes p {
 }
 
 @media (orientation: portrait) {
-    button#changecolor {
-        display: none!important;
+    button#change_color {
+        display: none;
     }
-    h4 {
-        font-size: 22pt;
+    h4, h5 {
+        font-size: 24pt;
     }
     h1 {
-        font-size: 34pt;
+        font-size: 36pt;
     }
     h2 {
-        font-size: 22pt;
+        font-size: 24pt;
     }
     #caption {
-        font-size: 18pt;
+        font-size: 20pt;
     }
     p {
-        font-size: 18pt;
+        font-size: 20pt;
     }
     footer, footer p {
-        font-size: 18pt;
+        font-size: 20pt;
     }
     section.footnotes, section.footnotes li, section.footnotes p {
-        font-size: 16pt;
+        font-size: 18pt;
     }
-    .container {
+    .row {
+        width: 100%;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        margin-right: -15px;
-        margin-left: -15px;
     }
     .header {
         padding-top: 10vh;
