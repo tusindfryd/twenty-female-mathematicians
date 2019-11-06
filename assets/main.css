@@ -108,6 +108,13 @@ section.footnotes, section.footnotes li, section.footnotes p {
     section.footnotes, section.footnotes li, section.footnotes p {
         font-size: 18pt;
     }
+
+    section.footnotes {
+        height: 100px;
+    }
+    section.footnotes ol {
+        padding-left: 30px;
+    }
     .col-md-3 {
         -ms-flex: 0 0 100%;
         -webkit-box-flex: 0 0 100%;
