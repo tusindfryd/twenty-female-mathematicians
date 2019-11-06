@@ -108,6 +108,12 @@ section.footnotes, section.footnotes li, section.footnotes p {
     section.footnotes, section.footnotes li, section.footnotes p {
         font-size: 18pt;
     }
+    .col-md-3 {
+        width: 100vw;
+    }
+    #card {
+        height: unset;
+    }
     .row {
         width: 100%;
         display: -webkit-box;
