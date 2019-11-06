@@ -85,34 +85,36 @@ section.footnotes, section.footnotes li, section.footnotes p {
 
 @media (orientation: portrait) {
     button#changecolor {
-        display: none
+        display: none!important;
     }
     h4 {
-        font-size: 18pt;
+        font-size: 22pt;
     }
     h1 {
-        font-size: 30pt;
+        font-size: 34pt;
     }
     h2 {
-        font-size: 18pt;
+        font-size: 22pt;
     }
     #caption {
-        font-size: 14pt;
+        font-size: 18pt;
     }
     p {
-        font-size: 14pt;
+        font-size: 18pt;
     }
     footer, footer p {
-        font-size: 14pt;
+        font-size: 18pt;
     }
     section.footnotes, section.footnotes li, section.footnotes p {
-        font-size: 12pt;
-    }
-    #card {
-        height: 100px;
+        font-size: 16pt;
     }
     .container {
-        max-width: 98vw;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
     }
     .header {
         padding-top: 10vh;
