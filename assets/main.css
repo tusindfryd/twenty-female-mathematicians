@@ -109,7 +109,10 @@ section.footnotes, section.footnotes li, section.footnotes p {
         font-size: 18pt;
     }
     .col-md-3 {
-        width: 100vw;
+        -ms-flex: 0 0 100%;
+        -webkit-box-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
     #card {
         height: unset;
