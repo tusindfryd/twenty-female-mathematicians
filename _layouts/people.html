@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+
+<button id="change_color" title="Highlight selected text"
+  style="background: url({{ "/assets/highlighter_icon.svg" | relative_url }})"></button>
+
+<div id="wrapper">
+
+  <div class="bio">
+    <h4>{{ page.name | escape }}</h4>
+    <span id="caption"><span style="font-weight: bold">Research areas:</span> {{ page.research_areas }} · <span
+        id="estimation"></span> min read</span>
+  </div>
+  <div class="content">{{ content }}</div>
+ 
+  {%- include bibliography.html -%}
+</div>
+<script>
+  var words = {{ page.content | number_of_words }};
+  var pace = 265;
+  var reading_time = Math.ceil(words / pace);
+  document.getElementById("estimation").innerHTML = reading_time;
+</script>
+<script src="{{ "/assets/highlight.js" | relative_url }}"></script>

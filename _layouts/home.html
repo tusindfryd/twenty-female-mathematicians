@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{%- include head.html -%}
+<div class="container">
+<div class="header">
+    <h1>Twenty Female Mathematicians</h1>
+    <h2>Based on a preprint by Hollis Williams</h2>
+    <hr>
+   
+</div>
+<div class="row">
+
+    {%- for people in site.people -%}
+    <div class="col-md-3">
+        <h4><a href="{{ site.url }}{{sitebase.url}}{{people.url}}">{{ people.name }}</a></h4>
+        <div id="card"><span id="caption"><span style="font-weight: bold">Research areas:</span>
+            {{ people.research_areas }}</span></div>
+        <hr>
+        <span id="caption"><a href="{{ site.url }}{{sitebase.url}}{{people.url}}">Read More</a></span>
+
+    </div>
+    {%- endfor -%}
+</div>
+</div>
+
+{%- include footer.html -%}
+</html>
