@@ -1,6 +1,6 @@
 ---
 name: Karen Vogtmann
-research_areas: geometric group theory, algebraic K-theory
+research_areas: geometric group theory, low-dimensional topology, cohomology of groups
 layout: people
 
 ---
