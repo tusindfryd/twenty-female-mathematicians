@@ -1,0 +1,12 @@
+---
+---
+[
+  {% for people in site.people %}
+    {
+
+      "name"    : "{{ people.name }}",
+      "url"      : "{{ site.url }}{{ site.baseurl }}{{ people.url }}"
+
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
