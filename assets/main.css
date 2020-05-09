@@ -131,33 +131,24 @@ section.footnotes, section.footnotes li, section.footnotes p {
 }
 
 @media (orientation: portrait) {
+    .container {
+        max-width: 94vw;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    header h5 {
+        padding-left: 0px!important;
+        width: 94vw;
+        margin: auto;
+    }
+
     button#change_color {
         display: none;
     }
     #search {
         display: none;
     }
-    h4, h5 {
-        font-size: 24pt;
-    }
-    h1 {
-        font-size: 36pt;
-    }
-    h2 {
-        font-size: 24pt;
-    }
-    #caption {
-        font-size: 20pt;
-    }
-    p {
-        font-size: 20pt;
-    }
-    footer, footer p {
-        font-size: 20pt;
-    }
-    section.footnotes, section.footnotes li, section.footnotes p {
-        font-size: 18pt;
-    }
+
     section.footnotes {
         height: 100px;
     }
@@ -169,6 +160,7 @@ section.footnotes, section.footnotes li, section.footnotes p {
         -webkit-box-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
+        padding-bottom: 100px;
     }
     #card {
         height: unset;
